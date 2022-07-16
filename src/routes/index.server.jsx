@@ -1,10 +1,10 @@
 import { Suspense } from "react"
 import FeaturedCollections from "../components/FeaturedCollections.server"
-import { Layout } from "../components/Layout.sever"
+import { Layout } from "../components/Layout.server"
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <section className="p-6 md:p-8 lg:p-12">
         <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">Hello world!</h1>
         <p className="font-bold mb-3">Welcome to Hydrogen.</p>
@@ -16,6 +16,6 @@ export default function Home() {
       <Suspense>
         <FeaturedCollections />
       </Suspense>
-    </Layout>
+    </>
   )
 }
